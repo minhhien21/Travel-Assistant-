@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@drawable/rounded_gradient"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+       >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/ptsans_bold"
+            android:text="@string/leave_your_comment"
+            android:textColor="@android:color/white"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/InputReviewText"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/rounded_edittext"
+            android:fontFamily="@font/ptsans_italic"
+            android:hint="Write your feeling"
+            android:paddingLeft="10dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="#97989c"
+            android:textSize="20dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/cancel_review_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner"
+                android:fontFamily="@font/ptsans_bold"
+                android:text="Cancel"
+                android:onClick="CancelReview"
+                android:layout_marginRight="20dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:id="@+id/send_review_button"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner"
+                android:fontFamily="@font/ptsans_bold"
+                android:text="Send"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <SearchView
+        android:id="@+id/home_search"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FFF"
+        android:focusable="auto"
+        android:iconifiedByDefault="false"
+        android:queryBackground="@android:color/transparent"
+        android:queryHint="Search" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/walk" />
+
+        <TextView
+            android:id="@+id/count_trip"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="bottom"
+            android:fontFamily="@font/ptsans_bold"
+            android:textSize="25dp"
+            android:text="0 trips"/>
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="17dp"
+            android:id="@+id/PageSettingReview"
+            android:onClick="PageCommentSettingClick"
+            android:layout_gravity="center_vertical"
+            android:backgroundTint="@android:color/white"
+            android:src="@drawable/ic_settings_black_24dp"
+            android:background="@drawable/rounded_corner"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@android:drawable/ic_input_add" />
+    </RelativeLayout>
+</LinearLayout>

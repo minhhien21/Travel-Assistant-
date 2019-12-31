@@ -1,0 +1,120 @@
+<resources>
+    <string name="app_name">Travel Assistant</string>
+    <string name="your_name">Your name</string>
+    <string name="forgot_password">Forgot password ?</string>
+    <string name="sign_up">Sign up</string>
+    <string name="display_logo">Display logo</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="saved_username">login_username</string>
+    <string name="saved_access_token">login_access_token</string>
+    <string name="saved_access_token_time">login_access_token_time</string>
+    <string name="saved_token">login_token</string>
+    <string name="error_invalid_email">Email không hợp lệ</string>
+    <string name="error_invalid_password">Mật khẩu quá ngắn</string>
+    <string name="error_incorrect_password">Số tài hoặc mật khẩu không đúng</string>
+    <string name="error_field_required">Vui lòng điền thông tin</string>
+    <string name="error_check_network_connection">Vui lòng kiểm tra lại kết nối mạng</string>
+    <string name="error_check_network_connection_click_to_retry">Vui lòng kiểm tra lại kết nối mạng. Xin mời thử lại?</string>
+    <string name="error_backend_error">Có lỗi hệ thống, vui lòng thử lại sau.</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="facebook_app_id">984719971911473</string>
+    <string name="fb_login_protocol_scheme">fb984719971911473</string>
+
+    <string name="map_key" translatable="false">AIzaSyB_qsP8AOP_P0MdlPz-48TDaJYjTP3vbjo</string>
+
+    <string name="service_type_prompt">Choose a service type</string>
+    <string name="tour_detail_label">Tour Detail</string>
+    <string name="edit_tour">Edit tour ></string>
+    <string name="add_member">Add member ></string>
+    <string name="review"><![CDATA[See reviews >]]></string>
+    <string name="follow_this_tour"><![CDATA[Follow this tour >]]></string>
+    <string name="detail">Detail:</string>
+    <string name="stop_points">Stop points:</string>
+    <string name="members">Members:</string>
+    <string name="comments">Comments:</string>
+    <string name="review_prompt">Rating:</string>
+    <string name="review_this_tour">Review this tour</string>
+    <string name="review_this_tour_click"><![CDATA[All reviews >]]></string>
+    <string name="see_all"><![CDATA[Send comment >]]></string>
+    <string name="leave_your_comment">Leave your comment</string>
+    <string name="time_spent">Time spent:</string>
+    <string name="address">Address:</string>
+    <string name="invite_you_to_tour">   invites you to tour: </string>
+    <string name="user_location_permission_explanation">This app needs location permissions in order to show its functionality.</string>
+    <string name="user_location_permission_not_granted">You didn\'t grant location permissions.</string>
+    <string name="access_token">pk.eyJ1IjoibWluaGhpZW4yMSIsImEiOiJjazRvOTd3eHAwMGMwM2psMXZnczBxZzgxIn0.Z8n0CEzs8p1x-0LJJhBWTA</string>
+    <string name="notifications">Notifications</string>
+
+    <string-array name="service_type_arrays">
+        <item>Restaurant</item>
+        <item>Hotel</item>
+        <item>Rest Station</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="province_arrays">
+        <item>Hồ Chí Minh</item>
+        <item>Hà Nội</item>
+        <item>Đà Nẵng</item>
+        <item>Bình Dương</item>
+        <item>Đồng Nai</item>
+        <item>Khánh Hòa</item>
+        <item>Hải Phòng</item>
+        <item>Long An</item>
+        <item>Quảng Nam</item>
+        <item>Bà Rịa Vũng Tàu</item>
+        <item>Đắk Lắk</item>
+        <item>Cần Thơ</item>
+        <item>Bình Thuận</item>
+        <item>Lâm Đồng</item>
+        <item>Thừa Thiên Huế</item>
+        <item>Kiên Giang</item>
+        <item>Bắc Ninh</item>
+        <item>Quảng Ninh</item>
+        <item>Thanh Hóa</item>
+        <item>Nghệ An</item>
+        <item>Hải Dương</item>
+        <item>Gia Lai</item>
+        <item>Bình Phước</item>
+        <item>Hưng Yên</item>
+        <item>Bình Định</item>
+        <item>Tiền Giang</item>
+        <item>Thái Bình</item>
+        <item>Bắc Giang</item>
+        <item>Hòa Bình</item>
+        <item>An Giang</item>
+        <item>Vĩnh Phúc</item>
+        <item>Tây Ninh</item>
+        <item>Thái Nguyên</item>
+        <item>Lào Cai</item>
+        <item>Nam Định</item>
+        <item>Quảng Ngãi</item>
+        <item>Bến Tre</item>
+        <item>Đắk Nông</item>
+        <item>Cà Mau</item>
+        <item>Vĩnh Long</item>
+        <item>Ninh Bình</item>
+        <item>Phú Thọ</item>
+        <item>Ninh Thuận</item>
+        <item>Phú Yên</item>
+        <item>Hà Nam</item>
+        <item>Hà Tĩnh</item>
+        <item>Đồng Tháp</item>
+        <item>Sóc Trăng</item>
+        <item>Kon Tum</item>
+        <item>Quảng Bình</item>
+        <item>Quảng Trị</item>
+        <item>Trà Vinh</item>
+        <item>Hậu Giang</item>
+        <item>Sơn La</item>
+        <item>Bạc Liêu</item>
+        <item>Yên Bái</item>
+        <item>Tuyên Quang</item>
+        <item>Điện Biên</item>
+        <item>Lai Châu</item>
+        <item>Lạng Sơn</item>
+        <item>Hà Giang</item>
+        <item>Bắc Kạn</item>
+        <item>Cao Bằng</item>
+    </string-array>
+
+</resources>

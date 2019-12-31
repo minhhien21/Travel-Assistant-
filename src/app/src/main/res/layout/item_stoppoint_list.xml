@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:id="@+id/StopPointAvatar"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/stop_point_background_test" />
+
+    <TextView
+        android:id="@+id/StopPointName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:fontFamily="@font/ptsans_bold"
+        android:text="Stop Point Name"
+        android:textColor="@android:color/white"
+        android:textSize="15dp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/StopPointName"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/StopPointName"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_address" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ptsans_bold"
+            android:text="@string/address"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/white"
+            android:textSize="8dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/StopPointAddress"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/StopPointName"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_marginLeft="20dp"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/calendar"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ptsans_bold"
+                android:text="@string/time_spent"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="5dp"
+                android:textSize="8dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/StopPointArriveAt"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:layout_marginHorizontal="5dp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/StopPointLeaveAt"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="10dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/StopPointName"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_marginLeft="20dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_room_service_black_24dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/ptsans_bold"
+                android:text="  Service:         "
+                android:textColor="@android:color/white"
+                android:textSize="8dp"
+                />
+
+            <TextView
+                android:id="@+id/StopPointService"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@android:color/white"
+                android:textSize="8dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/StopPointName"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_marginLeft="20dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/price_tag"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/ptsans_bold"
+                android:text="  Price:             "
+                android:textColor="@android:color/white"
+                android:textSize="8dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/StopPointMinCost"
+                android:layout_height="match_parent"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="8dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="-"
+                android:layout_marginHorizontal="5dp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="8dp"
+                />
+
+            <TextView
+                android:id="@+id/StopPointMaxCost"
+                android:layout_width="wrap_content"
+                android:layout_height="12dp"
+                android:textColor="@android:color/white"
+                android:textSize="8dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="VND"
+                android:layout_marginHorizontal="5dp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="8dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

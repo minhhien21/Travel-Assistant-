@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:weightSum="10"
+            android:background="@drawable/background_tour"
+            android:layout_margin="5dp"
+            >
+            <ImageView
+                android:id="@+id/avatar_tour"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:scaleType="fitXY"
+                android:layout_weight="5"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.25"
+                android:weightSum="10">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/placeholder" />
+                <TextView
+                    android:id="@+id/place_tour"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/ptsans_bold"
+                    android:layout_weight="8"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/quantum_white_text"/>
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/tabs" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.25"
+                android:weightSum="10">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/calendar" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8">
+                    <TextView
+                        android:id="@+id/Start_calender_tour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/ptsans_bold"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/quantum_white_text"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="-"
+                        android:fontFamily="@font/ptsans_bold"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/quantum_white_text"/>
+                    <TextView
+                        android:id="@+id/End_calender_tour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/ptsans_bold"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/quantum_white_text"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.25"
+                android:weightSum="10">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/multiple_users_silhouette" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8">
+                    <TextView
+                        android:id="@+id/adults_tour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/ptsans_bold"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/quantum_white_text"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text=" adults"
+                        android:fontFamily="@font/ptsans_bold"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/quantum_white_text"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.25"
+                android:weightSum="10">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/price_tag" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8">
+
+                    <TextView
+                        android:id="@+id/Min_price_tour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/ptsans_bold"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/quantum_white_text"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="-"
+                        android:fontFamily="@font/ptsans_bold"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/quantum_white_text"/>
+                    <TextView
+                        android:id="@+id/Max_price_tour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/ptsans_bold"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/quantum_white_text"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="VND"
+                        android:fontFamily="@font/ptsans_bold"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/quantum_white_text"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

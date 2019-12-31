@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.UpdateTour">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="52"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"
+            android:fontFamily="@font/ptsans_regular"
+            android:text="Tour name"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/Update_Tour_Name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:fontFamily="@font/ptsans_bold"
+            android:background="@drawable/rounded_corner"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/ptsans_regular"
+                android:text="Start day"
+                android:textSize="20dp"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/ptsans_regular"
+                android:text="End day"
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="5dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight ="1"
+                android:layout_marginRight="5dp"
+                android:weightSum="4">
+                <TextView
+                    android:id="@+id/Update_Tour_DayStart"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/ptsans_bold"
+                    android:background="@drawable/rounded_corner"
+                    android:paddingLeft="10dp"
+                    android:hint="Select date"
+                    android:gravity="center_vertical"
+                    android:textSize="20dp" />
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_date_range_black_24dp"
+                    android:scaleType="fitXY"
+                    android:background="@null"
+                    android:onClick="SelectStartDay"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight ="1"
+                android:layout_marginLeft="5dp"
+                android:weightSum="4">
+                <TextView
+                    android:id="@+id/Update_Tour_DayEnd"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/ptsans_bold"
+                    android:background="@drawable/rounded_corner"
+                    android:paddingLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:hint="Select date"
+                    android:textSize="20dp" />
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_date_range_black_24dp"
+                    android:scaleType="fitXY"
+                    android:background="@null"
+                    android:onClick="SelectEndDay"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/ptsans_regular"
+                android:text="Adults"
+                android:textSize="20dp"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/ptsans_regular"
+                android:text="Children"
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="5dp">
+            <EditText
+                android:id="@+id/Update_Tour_Adults"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/ptsans_bold"
+                android:background="@drawable/rounded_corner"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:text="0"
+                android:textSize="20dp" />
+            <EditText
+                android:id="@+id/Update_Tour_Children"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/ptsans_bold"
+                android:background="@drawable/rounded_corner"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:text="0"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/ptsans_regular"
+                android:text="Min cost"
+                android:textSize="20dp"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/ptsans_regular"
+                android:text="Max cost"
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="5dp">
+            <EditText
+                android:id="@+id/Update_Tour_MinCost"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/ptsans_bold"
+                android:background="@drawable/rounded_corner"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:text="0"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/Update_Tour_MaxCost"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/ptsans_bold"
+                android:background="@drawable/rounded_corner"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:text="0"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/Update_Tour_Image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/ptsans_bold"
+                android:background="@drawable/rounded_corner"
+                android:paddingLeft="20dp"
+                android:hint="Choose tour image"
+                android:textSize="25dp"
+                android:gravity="center_vertical">
+            </TextView>
+            <ImageButton
+                android:id="@+id/Create_Tour_GetImage"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="5dp"
+                android:layout_alignRight="@id/Update_Tour_Image"
+                android:src="@android:drawable/ic_input_add"
+                android:background="@android:color/white"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:layout_marginTop="10dp">
+            <CheckBox
+                android:id="@+id/Update_Tour_Check"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="This is your private trip?"
+                android:textSize="20dp"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Open"
+                android:id="@+id/radioButton_open" />
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Started"
+                android:id="@+id/radioButton_started" />
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Closed"
+                android:id="@+id/radioButton_closed" />
+        </RadioGroup>
+        <Button
+            android:id="@+id/Update_Tour_Button"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:fontFamily="@font/ptsans_bold"
+            android:background="@android:color/holo_orange_dark"
+            android:textColor="@android:color/white"
+            android:text="Update"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+</LinearLayout>

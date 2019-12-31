@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/radius">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="15dp"
+        android:orientation="vertical"
+        android:weightSum="67">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Add Stop point"
+                android:fontFamily="@font/ptsans_bold"
+                android:textSize="25dp"
+                android:gravity="center" />
+            <ImageButton
+                android:id="@+id/cancel_add_stop_point"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_cancel_black_24dp"
+                android:layout_marginRight="5dp"
+                android:background="@null"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Stop point name"
+            android:textSize="15dp"
+            android:layout_weight="2.5"/>
+        <EditText
+            android:id="@+id/stop_point_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/rounded_corner"
+            android:fontFamily="@font/ptsans_bold"
+            android:layout_weight="5"
+            android:hint="Điểm xuất phát"
+            android:paddingLeft="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Service type"
+            android:textSize="15dp"
+            android:layout_weight="2.5"
+            android:layout_marginTop="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:background="@drawable/rounded_corner">
+            <Spinner
+                android:id="@+id/stop_point_service_type"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/ptsans_bold"
+                android:paddingLeft="10dp"
+                android:entries="@array/service_type_arrays" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Address"
+            android:textSize="15dp"
+            android:layout_weight="2.5"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/stop_point_address"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/rounded_corner"
+            android:fontFamily="@font/ptsans_bold"
+            android:layout_weight="5"
+            android:hint="227 Nguyễn Văn Cừ, HCM, VN"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Province"
+            android:textSize="15dp"
+            android:layout_weight="2.5"
+            android:layout_marginTop="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:background="@drawable/rounded_corner">
+            <Spinner
+                android:id="@+id/stop_point_province"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/ptsans_bold"
+                android:entries="@array/province_arrays"
+                android:paddingLeft="10dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"
+            android:weightSum="2"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Min cost"
+                android:textSize="15dp"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Max cost"
+                android:textSize="15dp"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:weightSum="2">
+            <EditText
+                android:id="@+id/stop_point_min_cost"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/ptsans_bold"
+                android:background="@drawable/rounded_corner"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:text="100000" />
+            <EditText
+                android:id="@+id/stop_point_max_cost"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/ptsans_bold"
+                android:background="@drawable/rounded_corner"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:text="200000" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Arrive at"
+            android:textSize="15dp"
+            android:layout_weight="2.5"
+            android:layout_marginTop="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:weightSum="2">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="4"
+                android:layout_marginRight="5dp">
+                <TextView
+                    android:id="@+id/stop_point_time_start"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/ptsans_bold"
+                    android:background="@drawable/rounded_corner"
+                    android:hint="Time"
+                    android:gravity="center"/>
+                <ImageButton
+                    android:id="@+id/stop_point_button_select_time_start"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_access_time_black_24dp"
+                    android:scaleType="fitXY"
+                    android:background="@null" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight ="1"
+                android:layout_marginLeft="5dp"
+                android:weightSum="4">
+                <TextView
+                    android:id="@+id/stop_point_select_date_start"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="@drawable/rounded_corner"
+                    android:gravity="center"
+                    android:fontFamily="@font/ptsans_bold"
+                    android:hint="Select date" />
+                <ImageButton
+                    android:id="@+id/stop_point_button_select_date_start"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_date_range_black_24dp"
+                    android:scaleType="fitXY"
+                    android:background="@null" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Leave at"
+            android:textSize="15dp"
+            android:layout_weight="2.5"
+            android:layout_marginTop="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:weightSum="2">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="4"
+                android:layout_marginRight="5dp">
+                <TextView
+                    android:id="@+id/stop_point_time_end"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/ptsans_bold"
+                    android:background="@drawable/rounded_corner"
+                    android:hint="Time"
+                    android:gravity="center"/>
+                <ImageButton
+                    android:id="@+id/stop_point_button_select_time_end"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_access_time_black_24dp"
+                    android:scaleType="fitXY"
+                    android:background="@null" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight ="1"
+                android:layout_marginLeft="5dp"
+                android:weightSum="4">
+                <TextView
+                    android:id="@+id/stop_point_select_date_end"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="@drawable/rounded_corner"
+                    android:fontFamily="@font/ptsans_bold"
+                    android:gravity="center"
+                    android:hint="Select date" />
+                <ImageButton
+                    android:id="@+id/stop_point_button_select_date_end"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_date_range_black_24dp"
+                    android:scaleType="fitXY"
+                    android:background="@null" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="2">
+            <Button
+                android:id="@+id/stop_point_add"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/ptsans_bold"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_orange_dark"
+                android:textColor="@android:color/white"
+                android:text="ADD"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

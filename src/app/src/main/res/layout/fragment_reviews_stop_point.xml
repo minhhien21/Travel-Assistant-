@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/review_stop_point_count"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:fontFamily="@font/ptsans_bold"
+        android:text="0 reviews"
+        android:layout_marginLeft="20dp"
+        android:textSize="25dp"/>
+    <ListView
+        android:id="@+id/review_stop_point_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

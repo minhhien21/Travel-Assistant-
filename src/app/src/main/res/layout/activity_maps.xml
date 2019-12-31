@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ygaps.travelapp.View.MapsActivity">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".View.MapsActivity"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignTop="@id/map"
+        android:background="@drawable/white_border">
+        <EditText
+            android:id="@+id/maps_search"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/maps_imageView"
+            android:background="@null"
+            android:hint="Search"
+            android:maxLines="1"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:textColor="#000"
+            android:textSize="25dp"/>
+        <ImageView
+            android:id="@+id/maps_imageView"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_search_black_24dp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/historyPoint"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="83dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/notepad" />
+    <Button
+        android:id="@+id/delete_this_tour"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/ptsans_bold"
+        android:text="Delete this tour"
+        android:background="@android:color/holo_orange_dark"
+        android:textColor="@android:color/white"/>
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.AllReviewsTourActivity"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="All reviews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/ptsans_bold"
+            android:textColor="@android:color/white"
+            android:textSize="45dp" />
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="17dp"
+            android:id="@+id/PageSettingReview"
+            android:layout_gravity="center_vertical"
+            android:backgroundTint="@android:color/white"
+            android:src="@drawable/ic_settings_black_24dp"
+            android:background="@drawable/rounded_corner"
+            android:onClick="PageSettingReviewClick"
+            />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/AllReviewListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="17dp"
+        android:dividerHeight="7dp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_gradient"
+    android:padding="15dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/ptsans_bold"
+        android:text="Page Settings"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="20dp"
+        android:textColor="@android:color/white"
+        android:textSize="25dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+
+        android:gravity="center">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="24dp"
+       >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/ptsans_regular"
+            android:text="Page index"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+
+    <NumberPicker
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/page_index_number"
+        />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/ptsans_regular"
+            android:text="Page size"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+
+        <NumberPicker
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/page_size_number"/>
+
+
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        >
+
+        <Button
+            android:id="@+id/cancel_review_button"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:background="@drawable/rounded_corner"
+            android:fontFamily="@font/ptsans_bold"
+            android:text="Cancel"
+            android:onClick="CancelPageSettingClick"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:layout_width="75dp"
+            android:id="@+id/send_review_button"
+            android:layout_height="30dp"
+            android:background="@drawable/rounded_corner"
+            android:fontFamily="@font/ptsans_bold"
+            android:onClick="ApplyPageSettingClick"
+            android:text="Apply" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+
+</LinearLayout>
